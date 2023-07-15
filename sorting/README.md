@@ -4,6 +4,7 @@ This repository contains implementations of various sorting algorithms in differ
 
 - Bubble Sort
 - Insertion Sort
+- Selection Sort
 - Heap Sort
 - Merge Sort
 - Quick Sort
@@ -31,6 +32,16 @@ Insertion sort is another comparison-based sorting algorithm. It builds the fina
 4. Move to the next element and repeat steps 1-3.
 5. The array is now sorted.
 
+## Selection Sort
+
+Selection sort is a simple comparison-based sorting algorithm. It repeatedly finds the minimum element from the unsorted part of the array and places it at the beginning of the sorted portion.
+
+**Steps:**
+1. Find the minimum element in the unsorted portion of the array.
+2. Swap the minimum element with the first element in the unsorted portion.
+3. Move the boundary of the sorted portion one element to the right.
+4. Repeat steps 1-3 until the entire array is sorted.
+
 ## Heap Sort
 
 Heap sort is a comparison-based sorting algorithm that uses a binary heap data structure. It first builds a max-heap from the input array and then repeatedly extracts the maximum element from the heap, resulting in a sorted array.
@@ -55,25 +66,25 @@ Merge sort is a divide-and-conquer sorting algorithm. It divides the input array
 
 ## Quick Sort
 
-Quick sort is another divide-and-conquer sorting algorithm. It selects a pivot element from the array and partitions the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. It then recursively sorts the sub-arrays.
+Quick sort is another divide-and-conquer sorting algorithm. It selects a pivot element from the array and partitions the other features into two sub-arrays, according to whether they are less than or greater than the pivot. It then recursively sorts the sub-arrays.
 
 **Steps:**
 1. Choose a pivot element from the array.
-2. Partition the array into two sub-arrays, one with elements less than the pivot and the other with elements greater than the pivot.
+2. Partition the array into two sub-arrays, one with elements less than the pivot and the other with elements more significant than the pivot.
 3. Recursively apply steps 1-2 to the sub-arrays.
 4. Concatenate the sorted sub-arrays with the pivot element in the correct position.
 
 ## Time Complexity
----
 
 | Algorithm     | Best Time Complexity | Average Time Complexity | Worst Time Complexity |
 |---------------|----------------------|-------------------------|-----------------------|
 | Bubble Sort   | O(n)                 | O(n^2)                  | O(n^2)                |
 | Insertion Sort| O(n)                 | O(n^2)                  | O(n^2)                |
+| Selection Sort| O(n^2)               | O(n^2)                  | O(n^2)                |
 | Heap Sort     | O(n log n)           | O(n log n)              | O(n log n)            |
 | Merge Sort    | O(n log n)           | O(n log n)              | O(n log n)            |
 | Quick Sort    | O(n log n)           | O(n log n)              | O(n^2)                |
 
 Each sorting algorithm has its own strengths and weaknesses. The choice of algorithm depends on various factors, such as the size of the input, the expected data distribution, and the available memory. Understanding the time complexity of each algorithm can help in selecting the most appropriate sorting algorithm for a given scenario.
 
-For detailed implementation examples of each sorting algorithm, please refer to the corresponding code files within current directory.
+For detailed implementation examples of each sorting algorithm, please refer to the corresponding code files within the current directory.
