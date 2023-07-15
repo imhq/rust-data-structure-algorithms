@@ -1,1 +1,1 @@
-# rust-data-structure-algorithms
+# Rust Data Structure And Algoritm
