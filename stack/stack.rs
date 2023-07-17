@@ -1,7 +1,7 @@
 /*!
- * <Filename>.rs
+ * stack.rs
  *
- * Description: Array implemenation in Rust
+ * Description: Stack implemenation in Rust
  *
  * Author: Int Main
  * Created: <Date created>
@@ -39,8 +39,8 @@ impl<T> Stack<T> {
 }
 
 //Driver function
-
-fn main() {
+fn main()
+{
     let mut stack: Stack<i32> = Stack::new();
     stack.push(1);
     stack.push(2);
